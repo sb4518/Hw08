@@ -1,4 +1,4 @@
-import BirdBathFunc_CC_cls420 as bird_func
+import HW_04_Barobhuiya_Program_CC as bird_func
 import numpy as np
 
 if __name__ == "__main__":
