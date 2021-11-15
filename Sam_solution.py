@@ -1,9 +1,9 @@
-import BirdBathFunc_CC_cls420 as bbf
+import BirdBathFunc_CC_cls420 as bird_func
 import numpy as np
 
 if __name__ == "__main__":
     range_extender = 5
-    best_fractional_volume = bbf.BirdBathFunc_CC_cls420( -31.055,  -9.375,   -5.875)
+    best_fractional_volume = bird_func.BirdBathFunc_CC_cls420( -31.055,  -9.375,   -5.875)
 
     # The minimum and maximum range values for each parameter for the bird function
     min_params = [-30.0, -30.0, -30.0]
@@ -49,7 +49,7 @@ if __name__ == "__main__":
                 for twist in np.arange(twist_min, twist_max, degree_increment):
                     # Passes in the new parameters for the bird bath function to check the
                     # Fraction of water that is left.
-                    fractional_volume = bbf.BirdBathFunc_CC_cls420(rotate, tilt, twist)
+                    fractional_volume = bird_func.BirdBathFunc_CC_cls420(rotate, tilt, twist)
                     if fractional_volume > best_fractional_volume:
                         # stores the new best fractional volume and its corresponding parameters in the
                         # best params list so that it could be used for the next main iteration.
